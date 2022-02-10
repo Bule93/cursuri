@@ -1,0 +1,138 @@
+/* Start reset */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+/* End reset */
+
+/* Start grid */
+.section {
+  padding: 60px 0;
+  /* border: 1px solid red; */
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* border: 1px dashed blue; */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  /* border: 1px dotted green; */
+}
+
+.col {
+  flex: 1;
+  padding: 0 15px;
+  /* border: 1px solid magenta; */
+}
+/* End grid */
+
+/* Start typography */
+h2 {
+  font-size: 28px;
+  line-height: 12px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  color: #101d42;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 12px;
+  font-weight: bold;
+  margin-bottom: 35px;
+  color: #101d42;
+}
+
+/* End typography */
+
+/* END HELPER CLASSES */
+.text-center {
+  text-align: center;
+}
+
+/* END HELPER CLASSES */
+
+.calendar_card {
+  border: 1px solid #eaeaea;
+  padding: 25px 10px 6px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.calendar_card ul {
+  display: flex;
+}
+
+.calendar_card li {
+  flex: 1;
+  font-size: 14px;
+}
+
+.calendar_card .line {
+  margin: 25px -7px 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: green;
+}
+
+.calendar_card .line.red {
+  background-color: #ee5c3b;
+}
+.calendar_card .line.blue {
+  background-color: #4599d1;
+}
+.calendar_card .line.yellow {
+  background-color: #f8b357;
+}
+.calendar_card .line.green {
+  background-color: #38b99a;
+}
+
+.button:hover {
+  background-color: white;
+  color: #38b99a;
+  border: 2px solid #38b99a;
+}
+
+.button {
+  margin: auto;
+  padding: 12px 25px;
+  font-size: 16px;
+
+  border: 1px;
+  border-radius: 15px;
+  border-style: none;
+  background-color: #38b99a;
+
+  text-align: center;
+  color: white;
+
+  transition-duration: 0.4s;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}

@@ -1,0 +1,183 @@
+/* START RESET */
+body {
+  -webkit-print-color-adjust: exact !important;
+}
+
+html {
+  font-size: 10px; /*Stabilim dimensiunea de 1rem*/
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 2000px;
+  padding-top: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* END RESET */
+
+p {
+  font-size: 1.6rem;
+}
+
+.static {
+  position: static;
+  /* static nu afecteaza elementul, nu suporta offseturi */
+}
+
+.absolute {
+  position: absolute;
+  background-color: grey;
+  right: 10px;
+  top: 10px;
+  left: 100px;
+}
+
+.relative {
+  position: relative;
+  background-color: lightgray;
+  top: 30px;
+  left: 100px;
+  /* la fel ca static dar suporta offseturi, cand vreau sa mut vizual un element */
+}
+
+.fixed {
+  position: fixed;
+  background-color: red;
+  bottom: 10px;
+  right: 10px;
+  /* are nev. de macar 2 offseturi 
+  coordonatele se iau in functie de viewport*/
+}
+
+.fixed * {
+  display: block;
+}
+
+.sticky {
+  position: sticky;
+  top: 50px;
+  /* functioneaza ca un elemnet relativ */
+}
+
+.parinte-absolut {
+  width: 300px;
+  margin: 100px auto;
+  border: 1px dotted red;
+  position: relative;
+}
+
+.parinte-absolut img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.parinte-absolut h1 {
+  background-color: grey;
+  position: absolute;
+  top: 140px;
+  /* left: 0;
+  right: 0;  var 1 pt lungime cat parintele*/
+  right: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.share {
+  background-color: #4267b2;
+  color: #ffffff;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 1.6rem;
+}
+
+.share .fa {
+  font-size: 2.4rem;
+}
+
+.share span {
+  position: relative;
+  bottom: 3px;
+}
+
+header {
+  background-color: #4267b2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+}
+
+header .container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 5px 1.5rem; /* pentru tel de ex sa fie margine*/
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 1px;
+}
+
+header ul {
+  display: flex;
+}
+
+header a {
+  padding: 10px 15px;
+  display: block;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  min-height: 200rem;
+  border: 2px solid green;
+  /* overflow: hidden; strica position sticky */
+}
+
+aside {
+  width: 16rem;
+  border: 2px dotted blue;
+}
+
+main {
+  flex: 1;
+  border: 2px solid red;
+}
+
+.sidebar {
+  border: 5px solid black;
+  position: sticky;
+  top: 55px;
+}
+
+.exemplu {
+  border: 1px solid red;
+  width: 20rem;
+  height: 80px;
+  overflow: scroll;
+  font-size: 1.6rem;
+}
